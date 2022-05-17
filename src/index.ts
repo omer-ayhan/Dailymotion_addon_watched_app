@@ -1,9 +1,13 @@
 import { createAddon, MovieItem, runCli } from "@mediaurl/sdk";
 
 const exampleAddon = createAddon({
-  id: "example",
-  name: "example",
-  version: "0.0.0",
+  // id: "example",
+  // name: "example",
+  // version: "0.0.0",
+  id: "dailymotion_addon",
+  name: "Dailymotion Addon",
+  version: "0.0.1",
+
   // Trigger this addon on this kind of items
   itemTypes: ["movie", "series"],
   triggers: [
@@ -130,8 +134,7 @@ exampleAddon.registerActionHandler("source", async (input, ctx) => {
       {
         type: "url",
         name: "1080p with 30fps",
-        url:
-          "http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4",
+        url: "http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4",
         languages: ["en"],
       },
       // This YouTube source will be resolved by the internal YouTube resolver.
@@ -148,8 +151,7 @@ exampleAddon.registerActionHandler("source", async (input, ctx) => {
       {
         type: "url",
         name: "Direct link",
-        url:
-          "https://test-videos.co.uk/vids/jellyfish/mp4/h264/720/Jellyfish_720_10s_30MB.mp4",
+        url: "https://test-videos.co.uk/vids/jellyfish/mp4/h264/720/Jellyfish_720_10s_30MB.mp4",
       },
       {
         type: "url",
@@ -175,14 +177,12 @@ exampleAddon.addResolveHandler(
       // the user can select the stream in the video player settings.
       return [
         {
-          url:
-            "https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4",
+          url: "https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4",
           name: "Video in MP4 format",
           format: "mp4",
         },
         {
-          url:
-            "https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm",
+          url: "https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm",
           name: "Video in WEBM format",
           format: "webm",
         },
@@ -201,18 +201,15 @@ exampleAddon.addResolveHandler(
     if (input.url === "https://test-videos.co.uk/jellyfish/mp4-h264") {
       return [
         {
-          url:
-            "https://test-videos.co.uk/vids/jellyfish/mp4/h264/1080/Jellyfish_1080_10s_30MB.mp4",
+          url: "https://test-videos.co.uk/vids/jellyfish/mp4/h264/1080/Jellyfish_1080_10s_30MB.mp4",
           quality: "1080p",
         },
         {
-          url:
-            "https://test-videos.co.uk/vids/jellyfish/mp4/h264/720/Jellyfish_720_10s_30MB.mp4",
+          url: "https://test-videos.co.uk/vids/jellyfish/mp4/h264/720/Jellyfish_720_10s_30MB.mp4",
           quality: "720p",
         },
         {
-          url:
-            "https://test-videos.co.uk/vids/jellyfish/mp4/h264/360/Jellyfish_360_10s_30MB.mp4",
+          url: "https://test-videos.co.uk/vids/jellyfish/mp4/h264/360/Jellyfish_360_10s_30MB.mp4",
           quality: "360p",
         },
       ];
