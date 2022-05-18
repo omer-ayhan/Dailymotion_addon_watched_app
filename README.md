@@ -1,4 +1,4 @@
-# MediaURL Dailymotion addon
+# MediaURL Dailymotion addon(https://dailymotionmedia.herokuapp.com/)
 
 Dailymotion addon which tries to show videos from Dailymotion platform.
 
