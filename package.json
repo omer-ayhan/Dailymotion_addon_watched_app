@@ -1,6 +1,6 @@
 {
-	"name": "mediaurl-example",
-	"version": "0.0.0",
+	"name": "dailymotion_addon",
+	"version": "0.0.1",
 	"main": "dist",
 	"scripts": {
 		"build": "tsc",
