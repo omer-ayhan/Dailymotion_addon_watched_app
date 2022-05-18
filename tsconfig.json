@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"lib": ["DOM"],
+		// "module": "CommonJS",
+		// "target": "ES2016",
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"strictNullChecks": true
+	},
+	"include": ["src/index.ts"]
+}
