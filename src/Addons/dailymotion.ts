@@ -11,8 +11,6 @@ const dailymotionAddon = createAddon({
 	triggers: [
 		// Trigger this addon when an item has a `name` field
 		"id",
-		// or trigger it when an item has a `ids.imdb_id` field
-		// "imdb_id",
 	],
 });
 
