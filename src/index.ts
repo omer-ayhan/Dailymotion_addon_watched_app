@@ -1,4 +1,4 @@
 import { runCli } from "@mediaurl/sdk";
-import { exampleAddon } from "./Addons/dailymotion";
+import { dailymotionAddon } from "./Addons/dailymotion";
 
-runCli([exampleAddon]);
+runCli([dailymotionAddon]);
